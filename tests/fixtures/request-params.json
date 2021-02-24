@@ -1,0 +1,21 @@
+{
+  "width": 80,
+  "alignment": "right",
+  "spacing": "single",
+  "bold": [
+    "Cocoa",
+    "Chuck",
+    "Norris"
+  ],
+  "italic": [
+    "food"
+  ],
+  "replace": {
+    "Cocoa": "COCOA",
+    "sustainable": "SUSTAINABLE"
+  },
+  "food_facts": [
+    "industry",
+    "change"
+  ]
+}

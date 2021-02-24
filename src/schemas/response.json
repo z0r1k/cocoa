@@ -1,0 +1,14 @@
+{
+  "200": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "text"
+    ],
+    "properties": {
+      "text": {
+        "type": "string"
+      }
+    }
+  }
+}

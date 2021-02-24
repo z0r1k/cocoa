@@ -1,0 +1,151 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es2020": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint",
+    "import",
+    "security"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "indent": "off",
+    "max-len": "off",
+    "semi": "off",
+    "quotes": "off",
+    "comma-dangle": "off",
+    "no-underscore-dangle": "off",
+    "implicit-arrow-linebreak": "off",
+    "camelcase": "off",
+    "operator-linebreak": "off",
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": false
+      }
+    ],
+
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "prefer-arrow-callback": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "no-unused-expressions": "off",
+    "func-names": "off",
+    "no-warning-comments": [
+      "warn",
+      {
+        "terms": ["fixme"],
+        "location": "anywhere"
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "prefer-template": "error",
+
+    "node/no-unsupported-features/es-syntax": "off",
+    "node/no-missing-import": "off",
+
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "ignorePackages": true,
+        "pattern": {
+          "ts": "never",
+          "js": "never"
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "/tests/**/*.*"
+        ]
+      }
+    ],
+
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/ban-ts-comment": [
+      "warn",
+      {
+        "ts-expect-error": "allow-with-description"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "off",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "/tests/**/*.*"
+        ]
+      }
+    ],
+
+    "security/detect-object-injection": "off",
+    "security/detect-non-literal-fs-filename": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": { }
+    },
+    "node": {
+      "allowModules": [],
+      "resolvePaths": [
+        "./src",
+        "./node_modules"
+      ],
+      "tryExtensions": [
+        ".ts",
+        ".js",
+        ".json"
+      ]
+    }
+  }
+}

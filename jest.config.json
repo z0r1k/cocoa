@@ -1,0 +1,19 @@
+{
+  "preset": "ts-jest",
+  "testRegex": "/.*.test.ts$",
+  "rootDir": ".",
+  "moduleNameMapper": {
+    "^~/(.*)$": "<rootDir>/src/$1",
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "testEnvironment": "node",
+  "coveragePathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}",
+    "!**/node_modules/**",
+    "!**/@types/**",
+    "!src/interfaces/**"
+  ]
+}

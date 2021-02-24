@@ -1,0 +1,9 @@
+*
+!src
+!tests
+!.eslintrc.json
+!.prettierrc.json
+!jest.config.json
+!package*.json
+!tsconfig.json
+!.eslintignore

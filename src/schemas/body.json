@@ -1,0 +1,59 @@
+{
+  "title": "Request Body",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "text",
+    "config"
+  ],
+  "properties": {
+    "config": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "number"
+        },
+        "alignment": {
+          "type": "string",
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "spacing": {
+          "type": "string",
+          "enum": [
+            "single",
+            "double"
+          ]
+        },
+        "bold": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "italic": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replace": {
+          "type": "object"
+        },
+        "food_facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}
